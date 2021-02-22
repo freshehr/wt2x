@@ -16,5 +16,5 @@ wt2x
 # Usage
 Convert Webtemplate to FHIR Logical Model
 ```
-npx wt2x ./webtemplate.json ./fhirLogicalModel.json
+npx wt2x fhir ./webtemplate.json ./fhirLogicalModel.json
 ```
