@@ -2,12 +2,8 @@
 import wt2ast from './wt2ast'
 import visit from 'unist-util-visit'
 import { Composition, RmElement } from '.'
+import { snake2Camel } from './utils'
 
-const snake2Camel = (str:string) : string =>{
-    const replaced = str.replace(/([-_]\w)/g, g => g[1].toUpperCase())
-    const capitalized = replaced.charAt(0).toUpperCase() + replaced.slice(1)
-    return capitalized
-}
 const processComposition = (element: Composition, lang: string = "en"): any => {
     const url = `http://example.org/fhir/StructureDefinition/${element.id}`
     let structureDefinition = {
