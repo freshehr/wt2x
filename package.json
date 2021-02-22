@@ -7,7 +7,9 @@
   "bin": {
     "wt2x": "./dist/main.js"
   },
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
